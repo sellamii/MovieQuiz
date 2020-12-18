@@ -9,6 +9,7 @@ import '../Css/Login.css'
        <div className="Login">
        <div className="LoginContainer">
        <h3>Login to Movie Quiz</h3>
+       <form>
        <center>
        <input type="text" placeholder="Email Address" />
        </center>
@@ -18,6 +19,7 @@ import '../Css/Login.css'
        <center>
        <button type="submit" className="SubmitLogin"> Log In </button>
        </center>
+       </form>
        </div>
        </div>
     )

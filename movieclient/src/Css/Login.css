@@ -1,0 +1,47 @@
+.Login {
+    background-color: #e9ebee;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginContainer {
+     margin-top: 80px;
+     height: 372;
+     width: 612;
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     background-color: #ffffff;
+     
+
+}
+
+.LoginContainer > h3 {
+    margin-top: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.LoginContainer > form > center >input {
+
+    height: 33px;
+    width: 301px;
+    border: 0.5px solid gray;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.SubmitLogin{
+     background-color: burlywood;
+     border: none;
+     margin-top: 10px;
+     border-radius: 2px;
+     width: 301px;
+     cursor: pointer;
+     height: 42px;
+
+}
