@@ -1,10 +1,26 @@
-import React  from 'react'
+import React , {useState } from 'react'
 import '../Css/Login.css'
+import {auth} from '../firebase/firebase'
+import {useHistory} from 'react-router-dom'
+
 
  function Login(props) {
-  
+  const [Email, setEmail] = useState('')
+  const history = useHistory('')
+  const [Password, setPasswword] = useState('')
 
+  const login =(event) => {
+   event.preventDefault();
+   auth.signInWithEmailAndPassword(Email,Password)
+   .then( (auth) => {
+      console.log(auth)
+      history.push("/");
+   })
+   .catch ((e) =>{
+      alert(e.message);
+   })
 
+  }
 
     return (
        <div className="Login">
@@ -12,13 +28,13 @@ import '../Css/Login.css'
        <h3>Login to Movie Quiz</h3>
        <form>
        <center>
-       <input type="text" placeholder="Email Address" />
+       <input type="text" onChange={(e)=> setEmail(e.target.value)} placeholder="Email Address" />
        </center>
        <center>
-       <input type="password" placeholder="Password" />
+       <input type="password" onChange={(e)=> setPasswword(e.target.value)} placeholder="Password" />
        </center>
        <center>
-       <button type="submit" className="SubmitLogin"> Log In </button>
+       <button type="submit" onClick={login} className="SubmitLogin"> Log In </button>
        </center>
        </form>
        </div>
