@@ -2,7 +2,7 @@ import React , {useState } from 'react'
 import '../Css/Login.css'
 import {auth} from '../firebase/firebase'
 import {useHistory} from 'react-router-dom'
-
+import loginlogo from '../login.png'
 
  function Login(props) {
   const [Email, setEmail] = useState('')
@@ -25,6 +25,7 @@ import {useHistory} from 'react-router-dom'
     return (
        <div className="Login">
        <div className="LoginContainer">
+       <img src ={loginlogo} className="LoginLogo" alt="userlogo" />
        <h3>Login to Movie Quiz</h3>
        <form>
        <center>
