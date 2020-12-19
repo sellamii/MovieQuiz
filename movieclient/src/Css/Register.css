@@ -1,4 +1,4 @@
-.Login {
+.Register {
     background-color: #e9ebee;
     height: 100vh;
     align-items: center;
@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.LoginContainer {
+.RegisterContainer {
      margin-top: 70px;
      height: 500;
      width: 612;
@@ -18,15 +18,17 @@
 
 }
 
-.LoginContainer > h3 {
-    margin-top: 5px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    text-align: center;
-
+.RegisterLogo {
+    height: 120px;
+    width: 120px;
+  
+   
+    padding-left: 90px;
+    background-color: rgb(255, 255, 255);
+    
 }
 
-.LoginContainer > form > center >input {
+.RegisterContainer > form > center >input {
 
     height: 33px;
     width: 301px;
@@ -37,7 +39,7 @@
     border-radius: 5px;
 }
 
-.SubmitLogin{
+.SubmitRegister{
      background-color: rgb(238, 162, 63);
      border: none;
      margin-top: 10px;
@@ -48,15 +50,6 @@
 
 }
 
-.LoginLogo {
-    height: 100px;
-    width: 100px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    padding-left: 90px;
-    background-color: rgb(255, 255, 255);
-    
-}
 
 .Link {
     color: black;

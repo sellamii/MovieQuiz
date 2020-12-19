@@ -1,7 +1,7 @@
 import firebase from 'firebase'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = firebase.initializeApp ({
+const firebaseApp = firebase.initializeApp ({
     apiKey: "AIzaSyC7mxyn1c_4cbiPBPFDfxjv6FdOS0Ljy1g",
     authDomain: "moviequiz-e4b8d.firebaseapp.com",
     projectId: "moviequiz-e4b8d",
@@ -11,4 +11,8 @@ const firebaseConfig = firebase.initializeApp ({
     measurementId: "G-53D0SC7Q8Z"
   }) ;
 
-  export const auth = firebase.auth();
+  const auth = firebase.auth();
+  const db = firebaseApp.firestore();
+  const storage = firebase.storage();
+
+  export {db , auth , storage}
