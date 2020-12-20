@@ -3,7 +3,7 @@ import {useHistory ,Link} from 'react-router-dom'
 import {auth,db} from '../firebase/firebase'
 import '../Css/Register.css'
 import './LoginHeader'
-import registerlogo from '../register.jpg'
+import registerlogo from '../images/register.jpg'
 
  function Register(props) {
 

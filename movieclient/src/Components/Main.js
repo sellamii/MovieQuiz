@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Css/Main.css'
-import Logo from '../logoquiz.png'
+import Logo from '../images/logoquiz.png'
 
  function Main(props) {
     

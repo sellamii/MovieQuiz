@@ -2,7 +2,7 @@ import React , {useState } from 'react'
 import '../Css/Login.css'
 import {auth} from '../firebase/firebase'
 import {useHistory} from 'react-router-dom'
-import loginlogo from '../login.png'
+import loginlogo from '../images/login.png'
 import {Link} from 'react-router-dom'
 
 

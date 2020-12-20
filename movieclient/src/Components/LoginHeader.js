@@ -1,8 +1,8 @@
 import React from 'react'
 import '../Css/LoginHeader.css'
 import {Link} from 'react-router-dom'
-import movielogo from '../movielogo.png'
-import userlogo from '../zied.png'
+import movielogo from '../images/movielogo.png'
+import userlogo from '../images/zied.png'
 
  function LoginHeader() {
     
