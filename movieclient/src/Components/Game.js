@@ -4,9 +4,9 @@ import { bindActionCreators } from 'redux';
 
 import { getMovies, getActors } from '../Actions/Action.js';
 import Questions from './Questions'
+import { renderNothing } from './Shared/renderNothing'
 
-
-
+import '../Css/Game.css'
 
 
 class Game extends Component {

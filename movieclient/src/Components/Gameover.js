@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import { connect } from "react-redux"
 import { bindActionCreators } from 'redux'
 
+import { SocialMediaButtons } from '../Components/Socialmedia'
 
-
-
+import '../Css/Gameover.css'
+import '../Css/Global.css'
 
 
 class GameOver extends Component {

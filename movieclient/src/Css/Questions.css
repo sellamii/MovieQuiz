@@ -1,0 +1,42 @@
+.Questions {
+    width: 600px;
+}
+
+.Questions_score {
+	margin: 5% 0;
+}
+
+.Questions_pictures { 
+	margin-bottom: 1%;
+	height: 250px;
+}
+
+.Questions_pictures-actor,
+.Questions_pictures-movie,
+.noImage-actor,
+.noImage-movie {
+    width: 150px;
+	margin-bottom: 5%;
+}
+
+.Questions_pictures-actor,
+.noImage-actor {
+	margin-right: 18%;
+}
+
+.Questions_buttons {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Questions_button-T:active,
+.Questions_button-F:active  {
+	position:relative;
+	top:1px;
+}
+
+.Questions_button-T {
+    float: left;
+}

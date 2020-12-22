@@ -10,8 +10,8 @@ import { getDetailActor,
         getMoviesOfActor } 
 from '../Actions/Action';
 
-import getRandomInt from './helpers/randomNumber'
-import { renderNothing } from './helpers/renderNothing'
+import getRandomInt from './Shared/randomNumber'
+import { renderNothing } from './Shared/renderNothing'
 
 import '../Css/Questions.css'
 import '../Css/Global.css'
