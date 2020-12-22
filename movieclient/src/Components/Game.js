@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 
 import { getMovies, getActors } from '../Actions/Action.js';
 import Questions from './Questions'
-import { renderNothing } from './Shared/renderNothing'
+import { renderNothing } from './helpers/renderNothing'
 
 import '../Css/Game.css'
 
@@ -19,7 +19,7 @@ class Game extends Component {
     }
 
     componentDidMount() {
-   
+      this.getMoreFromAPI()
 
         //initilize the timer
         this.myInterval = setInterval(() => {
@@ -43,7 +43,24 @@ class Game extends Component {
         }, 1000)
     }
 
-    
+    //As the API returns us page by page, I created a function to have more than one page of actors or movies
+    // I chose 10 pages not to overload the api
+    getMoreFromAPI = () => {
+        let list = []
+        for (let pas = 10; pas > 0; pas--) {
+            this.props.getActors(pas).then(data => {
+                list.push(data.payload[0].results)
+                this.setState({arrayActors: list.flat()})
+            })
+        }
+        let list2 = []
+        for (let pas = 10; pas > 0; pas--) {
+            this.props.getMovies(pas).then(data => {
+                list2.push(data.payload[0].results)
+                this.setState({arrayMovies: list2.flat()})
+            })
+        }
+    }
 
     componentDidUpdate() {
         if( this.state.arrayActors.length === 200) this.props.updateAllActors(this.state.arrayActors)

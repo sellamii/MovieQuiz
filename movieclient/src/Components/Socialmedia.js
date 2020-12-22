@@ -12,13 +12,13 @@ import '../Css/Social.css'
        
 export const SocialMediaButtons= (props) => {
     const highScoreShow = " My highest score is " + props.props.highScore + " points"
-    const text = "MovieQuiz - Are you a real movie buff ? \n" + highScoreShow + " \n Do you really think you can beat my SCORE?? Ahah"
+    const text = "CineQuiz - Are you a real movie buff ? \n" + highScoreShow + " \n Do you really think you can beat my SCORE?? Ahah"
     return (
         <div className="SocialMediaButtons">
             <FacebookShareButton
                 url={"http://192.168.1.28:5000"}
                 quote={text}
-                hashtag="#MovieQuiz"
+                hashtag="#cineQuiz"
                 className="SocialMediaButtons-button"
             >
                 <FacebookIcon size={36} />
@@ -26,7 +26,7 @@ export const SocialMediaButtons= (props) => {
             <TwitterShareButton
                 url={"http://192.168.1.28:5000"}
                 quote={text}
-                hashtag="#MovieQuiz"
+                hashtag="#cineQuiz"
                 className="SocialMediaButtons-button"
                 >
                 <TwitterIcon size={36} />
@@ -34,7 +34,7 @@ export const SocialMediaButtons= (props) => {
             <WhatsappShareButton
                 url={"http://192.168.1.28:5000"}
                 quote={text}
-                hashtag="#MovieQuiz"
+                hashtag="#cineQuiz"
                 className="SocialMediaButtons-button"
                 >
                 <WhatsappIcon size={36} />

@@ -3,7 +3,7 @@ const initialState = {
   }
   const actorReducer = (state=initialState,action) => {
     switch(action.type){
-      case "GET_DETAIL_ACTOR_COMPLETED":{
+      case "GET_DETAIL_ACTOR_SUCCEED":{
           return{
               ...state,
               actor: action.payload[0],
@@ -16,14 +16,14 @@ const initialState = {
               status: 'failed'
           }
       }
-      case "GET_IMAGE_ACTOR_COMPLETED": {
+      case "GET_IMAGE_ACTOR_SUCCEED": {
           return{
               ...state,
               imageActor: action.payload[0].profiles[0].file_path,
               status:'complete'
           }
       }
-      case "GET_MOVIES_ACTOR_COMPLETED": {
+      case "GET_MOVIES_ACTOR_SUCCEED": {
         return{
           ...state,
           moviesActor: action.payload[0].cast,

@@ -5,7 +5,7 @@ const initialState = {
   
   const moviesReducer = (state=initialState,action) => {
     switch(action.type){
-      case "GET_ALL_MOVIES_COMPLETED":{
+      case "GET_ALL_MOVIES_SUCCEED":{
           return{
               ...state,
               movie: action.payload[0].results,

@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
+
 import GameOver from './Gameover'
 import Game from './Game'
-
+//import './gameBoard.css'
 
 class QuizLaunch extends Component {
     render() {

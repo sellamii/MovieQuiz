@@ -2,7 +2,7 @@ import React,{ Component } from 'react'
 import '../Css/Main.css'
 import Logo from '../images/logoquiz.png'
 import QuizLaunch from './QuizLaunch'
-import { persistor, store } from '../Store/Store'
+import { persistor, store } from '../Store.js'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 
